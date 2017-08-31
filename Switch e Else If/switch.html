@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>JavaScript - Switch</title>
+</head>
+<body>
+<h1 align="center">JavaScript - Switch</h1>
+
+<script type="text/javascript">
+var farol = "Roxo";
+var numero = 10;
+
+/*switch ele pega a variavel, e tenta todos os "case", se não for ele entra no padrao(default) e executa aquilo*/
+switch (farol) {
+
+	case "Vermelho":  //coloco dois pontos para referencia
+	document.write("Pare!");
+	break;       //ele para a execucao caso seja verdade o CASE, assim ele nao executa os outros cases
+
+	case "Amarelo":
+	document.write("Atenção!");
+	break;
+
+	case "Verde":
+	document.write("Prossiga!");
+	break;
+
+	default:
+	document.write("Essa cor não existe!");
+}
+
+//switch com números e contas
+switch (numero) {
+
+	case 10:  //coloco dois pontos para referencia
+	document.write("Número está certo!");
+	break;       //ele para a execucao caso seja verdade o CASE, assim ele nao executa os outros cases
+
+	case 5+7:
+	document.write("Essa conta não deu o número certo!");
+	break;
+
+	default:
+	document.write("Esse número não existe!");
+}
+
+</script>
+</body>
+</html>

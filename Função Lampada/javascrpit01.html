@@ -1,0 +1,25 @@
+<html>
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>JavaScript</title>
+	
+	<script>
+		var quebrada = false;
+		function mudaLampada(tipo) {
+		
+			if (!quebrada) {
+				document.getElementById("luz").src = "imagens/" + tipo + ".jpg";
+				if (tipo == 'lampada_quebrada') {
+					quebrada = true;
+				}
+			}
+		}
+	
+	</script>
+	
+</head>
+<body>
+	<h1> Função com variavél </h1>
+	<img src="imagens/lampada_apagada.jpg" id="luz" onmousemove="mudaLampada('lampada_acesa')"  onmouseout="mudaLampada('lampada_apagada')" onclick="mudaLampada('lampada_quebrada')" />	
+</body>
+</html>
